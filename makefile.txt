@@ -26,3 +26,50 @@ clean:
 	rm -rf *.egg-info
 	find . -type f -name "*.pyc" -delete
 	find . -type d -name "__pycache__" -delete
+
+#combo venv for PS, cmd, vs code terminal
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+# Initialize a Git repository
+git init
+
+# Add all files to the staging area
+git add .
+
+# Add a file to the staging area
+git add putfilenamehere
+
+# Add all files and subdirectories within to the staging area
+git add your/dir/subdir
+
+#To ensure the file is staged:
+git status
+
+# Make a commit with a message
+git commit -m "Initial commit with virtual environment"
+
+#If you're ready to push the commit to a remote repository:
+git push origin <branch-name>
+
+#To unstage all changes currently staged for commit, use the following command:
+git restore --staged .
+
+#To completely unstage all changes and exit Git, follow these steps:
+git reset
+
+
+# git commit without hook
+# If you want to commit your changes without running the pre-commit hooks, 
+# you can bypass them using the --no-verify option with the git commit command. 
+# This will skip the hooks and commit your changes directly.
+git commit -m "str no pre-commit hooks" --no-verify
+
+#Finally, to push these commits to the remote repository:
+git push
+
+To ensure the commit was successful and view your commit history:
+git log --oneline
+
+
+pip install -r requirements.txt

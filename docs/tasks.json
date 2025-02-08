@@ -10,25 +10,25 @@
         {
             "label": "Run Application",
             "type": "shell",
-            "command": "streamlit run src/local_ai_search/pages/home.py",
+            "command": "streamlit run src/br8niac/pages/home.py",
             "group": "test"
         },
         {
             "label": "Run Tests",
             "type": "shell",
-            "command": "pytest tests/ --cov=local_ai_search --cov-report=term-missing",
+            "command": "pytest tests/ --cov=br8niac --cov-report=term-missing",
             "group": "test"
         },
         {
             "label": "Format Code",
             "type": "shell",
-            "command": "black src/local_ai_search tests && isort src/local_ai_search tests",
+            "command": "black src/br8niac tests && isort src/br8niac tests",
             "group": "build"
         },
         {
             "label": "Lint Code",
             "type": "shell",
-            "command": "flake8 src/local_ai_search tests && mypy src/local_ai_search",
+            "command": "flake8 src/br8niac tests && mypy src/br8niac",
             "group": "test"
         },
         {

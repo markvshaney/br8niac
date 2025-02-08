@@ -6,7 +6,7 @@ This guide explains how to set up and use the Local AI Search project in Cursor 
 
 1. Open the project in Cursor IDE:
 ```bash
-cursor local-ai-search
+cursor br8niac
 ```
 
 2. Install the Python extension if not already installed.
@@ -112,7 +112,7 @@ Access tasks in Cursor:
 The project follows this structure in Cursor:
 
 ```
-local_ai_search/
+br8niac/
 ├── .cursor/          # Cursor IDE configuration
 ├── src/              # Source code
 ├── tests/            # Test files

@@ -1,6 +1,6 @@
-local_ai_search/
+br8niac/
 ├── src/
-│   └── local_ai_search/
+│   └── br8niac/
 │       ├── __init__.py
 │       ├── config.json           # Configuration file
 │       ├── pages/

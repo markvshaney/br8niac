@@ -1,7 +1,7 @@
 """Pytest configuration and fixtures."""
 
 import pytest
-from local_ai_search.config import Config
+from br8niac.config import Config
 
 @pytest.fixture
 def mock_config():

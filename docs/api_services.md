@@ -115,8 +115,8 @@ class SearchResultType(str, Enum):
 ### Basic Search Implementation
 
 ```python
-from local_ai_search.services.ai_service import AIService
-from local_ai_search.config import Config
+from br8niac.services.ai_service import AIService
+from br8niac.config import Config
 
 # Initialize service
 config = Config()
@@ -139,8 +139,8 @@ else:
 
 ```python
 import streamlit as st
-from local_ai_search.components.search_box import render_search_box
-from local_ai_search.components.results_display import render_results
+from br8niac.components.search_box import render_search_box
+from br8niac.components.results_display import render_results
 
 # Render search box
 query = render_search_box()

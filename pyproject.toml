@@ -31,12 +31,13 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
-addopts = "-v --cov=local_ai_search"
+addopts = "-v --cov=br8niac"
 
 [tool.black]
 line-length = 88
 target-version = ["py38"]
 
 [tool.isort]
+
 profile = "black"
 multi_line_output = 3

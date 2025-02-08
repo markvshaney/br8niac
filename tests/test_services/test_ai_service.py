@@ -1,8 +1,8 @@
 """Tests for the AI service module."""
 
 import pytest
-from local_ai_search.services.ai_service import AIService
-from local_ai_search.constants import ModelStatus
+from br8niac.services.ai_service import AIService
+from br8niac.constants import ModelStatus
 
 def test_check_model_status(mock_config, requests_mock):
     """Test model status checking."""

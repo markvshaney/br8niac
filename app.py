@@ -18,8 +18,8 @@ if src_path not in sys.path:
     sys.path.append(src_path)
 
 # Import local modules
-from local_ai_search.pages.home import main
-from local_ai_search.utils.session import init_session_state
+from br8niac.pages.home import main
+from br8niac.utils.session import init_session_state
 
 if __name__ == "__main__":
     try:

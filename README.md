@@ -53,21 +53,23 @@ make run
 ```
 Or:
 ```bash
-streamlit run src/local_ai_search/pages/home.py
+streamlit run src/br8niac/pages/home.py
 ```
+
 
 ## 🛠️ Development
 
 ### Project Structure
 
 ```
-local_ai_search/
+br8niac/
 ├── src/                  # Source code
-│   └── local_ai_search/
+│   └── br8niac/
 │       ├── pages/       # Streamlit pages
 │       ├── components/  # UI components
 │       ├── services/    # Business logic
 │       └── utils/       # Utilities
+
 ├── tests/               # Test suite
 ├── docs/               # Documentation
 └── requirements/       # Dependencies

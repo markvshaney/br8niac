@@ -3,10 +3,10 @@ from pathlib import Path
 import json
 from typing import Optional
 
-from local_ai_search.services.ai_service import AIService, ModelStatus
-from local_ai_search.components.search_box import render_search_box
-from local_ai_search.components.results_display import render_results
-from local_ai_search.utils.session import init_session_state
+from br8niac.services.ai_service import AIService, ModelStatus
+from br8niac.components.search_box import render_search_box
+from br8niac.components.results_display import render_results
+from br8niac.utils.session import init_session_state
 
 def load_config() -> dict:
     """Load configuration from config.json."""
