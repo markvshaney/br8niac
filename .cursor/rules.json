@@ -1,0 +1,118 @@
+{
+    "version": "1.0",
+    "rules": {
+        "python": {
+            "max_line_length": 88,
+            "docstring_style": "google",
+            "import_order": [
+                "stdlib",
+                "third_party",
+                "first_party",
+                "local"
+            ],
+            "format_on_save": true,
+            "linting": {
+                "enabled": true,
+                "pylint_enabled": true,
+                "flake8_enabled": true,
+                "mypy_enabled": true
+            },
+            "type_checking": {
+                "enabled": true,
+                "strict": true
+            },
+            "testing": {
+                "test_discovery": "pytest",
+                "auto_test_on_save": true
+            },
+            "refactoring": {
+                "import_sorting": true,
+                "remove_unused_imports": true,
+                "organize_imports_on_save": true
+            },
+            "code_style": {
+                "spaces_around_operators": true,
+                "spaces_before_comment": 2,
+                "align_multiline_comment": true,
+                "align_assignment": true,
+                "blank_lines": {
+                    "around_class": 2,
+                    "around_method": 1,
+                    "around_top_level": 2
+                }
+            },
+            "naming": {
+                "class_names": "PascalCase",
+                "function_names": "snake_case",
+                "variable_names": "snake_case",
+                "constant_names": "UPPER_CASE"
+            }
+        },
+        "streamlit": {
+            "auto_reload": true,
+            "show_spinner": true,
+            "code_folding": true
+        },
+        "git": {
+            "commit_message_convention": {
+                "enabled": true,
+                "types": [
+                    "feat",
+                    "fix",
+                    "docs",
+                    "style",
+                    "refactor",
+                    "test",
+                    "chore"
+                ],
+                "scope_required": false,
+                "body_required": false
+            },
+            "branch_naming": {
+                "pattern": "^(feature|bugfix|hotfix|release)/[a-z0-9-]+$",
+                "enforced": true
+            }
+        },
+        "editor": {
+            "trim_trailing_whitespace": true,
+            "insert_final_newline": true,
+            "tab_size": 4,
+            "rulers": [88],
+            "word_wrap": true,
+            "auto_closing_pairs": true,
+            "auto_indent": true,
+            "format_on_paste": true
+        },
+        "terminal": {
+            "default_shell": "bash",
+            "integrated": true,
+            "cwd": "${workspaceFolder}"
+        }
+    },
+    "exclude_patterns": [
+        "**/__pycache__/**",
+        "**/.git/**",
+        "**/venv/**",
+        "**/.env",
+        "**/*.pyc",
+        "**/build/**",
+        "**/dist/**"
+    ],
+    "recommendations": {
+        "extensions": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "njpwerner.autodocstring",
+            "streetsidesoftware.code-spell-checker",
+            "eamodio.gitlens"
+        ],
+        "settings": {
+            "files.trimTrailingWhitespace": true,
+            "files.insertFinalNewline": true,
+            "editor.formatOnSave": true,
+            "editor.rulers": [88],
+            "python.linting.enabled": true,
+            "python.formatting.provider": "black"
+        }
+    }
+}

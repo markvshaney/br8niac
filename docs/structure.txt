@@ -1,0 +1,25 @@
+docs/
+├── index.md                     # Main documentation entry point
+├── getting_started/
+│   ├── installation.md         # Installation instructions
+│   ├── quickstart.md          # Quick start guide
+│   └── configuration.md       # Configuration guide
+├── user_guide/
+│   ├── interface.md           # UI guide
+│   ├── search.md             # Search functionality
+│   └── features.md           # Feature documentation
+├── developer_guide/
+│   ├── architecture.md        # System architecture
+│   ├── components.md         # Component documentation
+│   ├── services.md          # Services documentation
+│   ├── testing.md           # Testing guide
+│   └── contributing.md       # Contribution guidelines
+├── deployment/
+│   ├── local.md             # Local deployment
+│   └── docker.md            # Docker deployment
+├── tooling/
+│   ├── cursor_setup.md      # Cursor IDE setup
+│   └── development_tools.md # Development tools guide
+└── api/
+    ├── services.md          # Services API
+    └── components.md        # Components API

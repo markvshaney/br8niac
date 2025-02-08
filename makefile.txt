@@ -1,0 +1,28 @@
+.PHONY: install format lint test run clean
+
+install:
+	pip install -e ".[dev]"
+	pip install -r requirements/dev.txt
+
+format:
+	black src/br8niac tests
+	isort src/br8niac tests
+
+lint:
+	flake8 src/br8niac tests
+	mypy src/br8niac
+	black --check src/br8niac tests
+	isort --check-only src/br8niac tests
+
+test:
+	pytest tests/ --cov=br8niac --cov-report=term-missing
+
+run:
+	streamlit run src/br8niac/pages/home.py
+
+clean:
+	rm -rf build/
+	rm -rf dist/
+	rm -rf *.egg-info
+	find . -type f -name "*.pyc" -delete
+	find . -type d -name "__pycache__" -delete

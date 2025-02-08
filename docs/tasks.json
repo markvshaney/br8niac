@@ -1,0 +1,60 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "pip install -e \".[dev]\" && pip install -r requirements/dev.txt",
+            "group": "build"
+        },
+        {
+            "label": "Run Application",
+            "type": "shell",
+            "command": "streamlit run src/local_ai_search/pages/home.py",
+            "group": "test"
+        },
+        {
+            "label": "Run Tests",
+            "type": "shell",
+            "command": "pytest tests/ --cov=local_ai_search --cov-report=term-missing",
+            "group": "test"
+        },
+        {
+            "label": "Format Code",
+            "type": "shell",
+            "command": "black src/local_ai_search tests && isort src/local_ai_search tests",
+            "group": "build"
+        },
+        {
+            "label": "Lint Code",
+            "type": "shell",
+            "command": "flake8 src/local_ai_search tests && mypy src/local_ai_search",
+            "group": "test"
+        },
+        {
+            "label": "Clean Project",
+            "type": "shell",
+            "command": "find . -type d -name \"__pycache__\" -exec rm -r {} + && find . -type f -name \"*.pyc\" -delete && rm -rf build/ dist/ *.egg-info",
+            "group": "build"
+        },
+        {
+            "label": "Start Ollama",
+            "type": "shell",
+            "command": "ollama serve",
+            "group": "test",
+            "isBackground": true
+        },
+        {
+            "label": "Pull Mistral Model",
+            "type": "shell",
+            "command": "ollama pull mistral",
+            "group": "build"
+        },
+        {
+            "label": "Setup Environment",
+            "type": "shell",
+            "command": "cp .env.example .env",
+            "group": "build"
+        }
+    ]
+}

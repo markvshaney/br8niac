@@ -1,0 +1,67 @@
+local_ai_search/
+├── src/
+│   └── local_ai_search/
+│       ├── __init__.py
+│       ├── config.json           # Configuration file
+│       ├── pages/
+│       │   ├── __init__.py
+│       │   └── home.py          # Main Streamlit page
+│       ├── components/
+│       │   ├── __init__.py
+│       │   ├── search_box.py    # Search input component
+│       │   └── results_display.py # Results display component
+│       ├── services/
+│       │   ├── __init__.py
+│       │   └── ai_service.py    # AI service integration
+│       └── utils/
+│           ├── __init__.py
+│           ├── session.py       # Session state management
+│           └── logging.py       # Logging configuration
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py             # Test configuration and fixtures
+│   ├── test_services/
+│   │   ├── __init__.py
+│   │   └── test_ai_service.py
+│   ├── test_components/
+│   │   ├── __init__.py
+│   │   ├── test_search_box.py
+│   │   └── test_results_display.py
+│   └── test_utils/
+│       ├── __init__.py
+│       └── test_session.py
+├── docs/
+│   ├── index.md                # Main documentation
+│   ├── getting_started/
+│   │   ├── installation.md
+│   │   ├── quickstart.md
+│   │   └── configuration.md
+│   ├── user_guide/
+│   │   ├── interface.md
+│   │   ├── search.md
+│   │   └── features.md
+│   ├── developer_guide/
+│   │   ├── architecture.md
+│   │   ├── components.md
+│   │   ├── testing.md
+│   │   └── contributing.md
+│   ├── deployment/
+│   │   ├── local.md
+│   │   └── docker.md
+│   └── tooling/
+│       ├── cursor_setup.md
+│       └── development_tools.md
+├── .cursor/
+│   ├── tasks.json             # Cursor IDE tasks
+│   └── rules.json            # Cursor IDE rules
+├── requirements/
+│   ├── base.txt              # Base dependencies
+│   ├── dev.txt              # Development dependencies
+│   └── test.txt             # Testing dependencies
+├── app.py                    # Application entry point
+├── .env.example              # Environment variables template
+├── .gitignore
+├── LICENSE
+├── Makefile                  # Development commands
+├── pyproject.toml           # Project metadata and dependencies
+└── README.md
